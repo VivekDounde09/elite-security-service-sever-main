@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Contact Form Submission
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .field {
+        margin-bottom: 10px;
+      }
+      .field-label {
+        font-weight: bold;
+      }
+      .field-value {
+        margin-left: 10px;
+      }
+  body
+    .container
+      .field
+        .field-label Email:
+        .field-value #{email}
+      .field
+        .field-label Contact Number:
+        .field-value #{contactNumber}
+      .field
+        .field-label Message:
+        .field-value #{message}
